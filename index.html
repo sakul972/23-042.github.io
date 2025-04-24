@@ -7,16 +7,16 @@
 </head>
 <body>
 <div id="resultado"></div>
-<script>
-    function sumar()
-    {
-        valor1= parseInt(prompt("Vamos a sumar 2 números. Imgrese el número uno: "));
-        valor2= parseInt(prompt("Ingrese número dos:"));
 
-        var resultado=valor1+valor2
-        document.getElementById("resultado").innerHTML="La función obtiene la siguiente suma "+resultado
-    }
-    sumar();
+
+<script>
+function sumar(valor1,valor2)
+{
+var resultado= valor1+valor2;
+return resultado;
+
+}
+document.getElementById("resultado").innerHTML="Resultado de la suma es: " +sumar(30,50);
 </script>
     
 </body>
