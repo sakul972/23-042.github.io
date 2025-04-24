@@ -6,18 +6,17 @@
     <title>Lukas</title>
 </head>
 <body>
-<div id="resultado"></div>
+ 
+<div id="resultado" style="color: red;"></div>
 
-
+<button onclick="javascript:cambiar()">cambiar texto</button>
 <script>
-function sumar(valor1,valor2)
-{
-var resultado= valor1+valor2;
-return resultado;
+function cambiar(){
+document.getElementById("resultado").innerHTML="El texto cambio por seleccionar el boton"
+
 
 }
-document.getElementById("resultado").innerHTML="Resultado de la suma es: " +sumar(30,50);
+
 </script>
-    
 </body>
 </html>
